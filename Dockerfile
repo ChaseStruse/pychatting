@@ -45,6 +45,7 @@ COPY --from=builder /app/.venv .venv
 
 # Set up environment variables for production
 ENV PATH="/app/.venv/bin:$PATH"
+ENV PYTHONPATH=/server
 
 # Expose the specified port for FastAPI
 EXPOSE $PORT
