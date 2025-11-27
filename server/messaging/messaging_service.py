@@ -14,3 +14,7 @@ def get_last_ten_messages(user_id: str):
 			Message(id=uuid.uuid4(), message="Test 4", recipient_id=test_uuid_reciever, sender_id=test_uuid_sender),
 		]
 	}
+
+
+def insert_message(req_body: Message):
+	return req_body
