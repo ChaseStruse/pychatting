@@ -14,6 +14,7 @@ Chat application built in python
 ``
 docker compose up     # Creates the image and exposes to the 8080 port
 ``
+</br>
 ``
 docker compose down     # Clean up
 ``
