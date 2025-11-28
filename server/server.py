@@ -18,5 +18,5 @@ async def get_messages():
 
 # POST /message
 @app.post("/message")
-async def post_message(req_body: Message):
+async def post_message(req_body: dict):
       return insert_message(req_body=req_body)
