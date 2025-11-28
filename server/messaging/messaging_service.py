@@ -1,6 +1,11 @@
 import uuid
+import os
 from server.models.message import Message
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def get_last_ten_messages(user_id: str):
 	test_uuid_sender = uuid.uuid4()
